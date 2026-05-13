@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title My Art Portfolio
+    link(rel="stylesheet", href="assets/css/style.css")
+  body
+    header
+      h1 My Art Portfolio
+      p A collection of my paintings and drawings.
+
+    main#gallery-container
+      //- This loops through the data provided by the Controller
+      each art in artworks
+        article.art-piece
+          img(src=art.imageUrl, alt=art.title)
+          h2= art.title
+          p= art.description
