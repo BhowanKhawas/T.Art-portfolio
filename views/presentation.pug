@@ -3,19 +3,18 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Full Experience | Tisa Shrestha
+    title Cinematic Gallery | Tisa Shrestha
     link(rel="stylesheet", href="assets/css/presentation.css")
-  body.presentation-mode
+  body.slideshow-mode
     nav
-      a(href="index.html") ← Back to Grid
+      a(href="index.html") ← Gallery
       a(href="about.html") About
-      a(href="presentation.html") Presentation
 
-    main#full-scroll-container
-      each art in artworks
-        section.full-view-section
-          .image-wrapper
-            img(src=art.imageUrl, alt=art.title)
-          .image-meta
-            h2= art.title
+    main.slideshow-container
+      each art, index in artworks
+        //- Each slide stays for 6 seconds, total duration = 52 * 6 = 312s
+        .slide(style=`animation-delay: ${index * 6}s`)
+          img(src=art.imageUrl, alt=art.title)
+          .caption
+            h1= art.title
             p= art.description
