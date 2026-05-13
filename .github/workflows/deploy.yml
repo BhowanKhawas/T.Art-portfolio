@@ -1,0 +1,42 @@
+name: Build and Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main  # Runs every time you push to the main branch
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run MVC Build Controller
+        run: node controllers/build.js  # This generates your HTML files
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # This tells GitHub to host the folder where your HTML files live
+          path: '.' 
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
