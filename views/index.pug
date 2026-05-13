@@ -9,7 +9,7 @@ html(lang="en")
     nav
       a(href="about.html") About
       a(href="index.html") Gallery
-      
+      a(href="presentation.html") Presentation
 
     header.hero-header
     h1 Tisa (Dilasha) Shrestha
@@ -17,8 +17,9 @@ html(lang="en")
 
     main#gallery-container
       //- This loops through the art data and displays the photos and descriptions
-      each art in artworks
-        article.art-piece
-          img(src=art.imageUrl, alt=art.title)
-          h2= art.title
-          p= art.description
+      each item in artData
+      .art-piece
+        a(href=`view-${item.id}.html`)
+          img(src=item.imageUrl, alt=item.title)
+        h2= item.title
+        p= item.description

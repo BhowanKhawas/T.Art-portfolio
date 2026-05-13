@@ -1,0 +1,57 @@
+/* Presentation Mode Styling */
+.presentation-mode {
+    overflow: hidden; /* Prevents double scrollbars */
+}
+
+#full-scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.full-view-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    background-color: #050505;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.image-wrapper img {
+    max-height: 80vh;
+    max-width: 90%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.7);
+}
+
+.image-meta {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#full-scroll-container::-webkit-scrollbar {
+    display: none; /* Keeps the look clean and minimal */
+}
+
+.image-meta h2 {
+    font-size: 1.8rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    background: linear-gradient(to right, #fff, var(--text-dim));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image-meta p {
+    font-size: 1rem;
+    color: var(--text-dim);
+    max-width: 500px;
+    margin: 0 auto;
+}
