@@ -1,157 +1,137 @@
 :root {
-    --bg-color: #121212;
-    --card-bg: #1e1e1e;
-    --text-main: #ffffff;
-    --text-dim: #b3b3b3;
-    --accent: #ff0055; /* Neon accent color */
+    --bg-color: #0a0a0a;
+    --card-bg: #161616;
+    --text-main: #f5f5f5;
+    --text-dim: #a0a0a0;
+    --accent: #ff0055; 
+    --glass-bg: rgba(22, 22, 22, 0.7);
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-main);
     margin: 0;
-    padding-bottom: 50px;
+    line-height: 1.6;
 }
 
-/* Elegant Navigation */
+/* Glassmorphism Navigation */
 nav {
     display: flex;
     justify-content: center;
-    padding: 2rem;
-    background: rgba(0,0,0,0.8);
-    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 nav a {
     color: var(--text-dim);
     text-decoration: none;
-    margin: 0 30px;
-    letter-spacing: 2px;
+    margin: 0 25px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    transition: 0.3s;
+    font-size: 0.85rem;
+    transition: var(--transition);
 }
 
 nav a:hover {
     color: var(--accent);
+    text-shadow: 0 0 10px rgba(255, 0, 85, 0.5);
 }
 
-/* Gallery Presentation */
+/* High-End Masonry Gallery */
 #gallery-container {
-    column-count: 3; /* Masonry effect */
-    column-gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
+    column-count: 3;
+    column-gap: 25px;
+    padding: 40px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .art-piece {
     break-inside: avoid;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     background: var(--card-bg);
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
-    transition: transform 0.3s ease;
-    border: 1px solid #333;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .art-piece:hover {
-    transform: scale(1.02);
+    transform: translateY(-8px) scale(1.01);
     border-color: var(--accent);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 15px rgba(255, 0, 85, 0.1);
 }
 
 .art-piece img {
     width: 100%;
-    display: block;
+    filter: grayscale(10%) contrast(105%);
+    transition: var(--transition);
+}
+
+.art-piece:hover img {
+    filter: grayscale(0%) contrast(100%);
 }
 
 .art-piece h2 {
-    font-size: 1.1rem;
-    padding: 15px 15px 5px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px 20px 5px 20px;
     margin: 0;
+    letter-spacing: 0.02em;
 }
 
 .art-piece p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--text-dim);
-    padding: 0 15px 20px 15px;
+    padding: 0 20px 25px 20px;
 }
 
-/* Responsive Grid */
-@media (max-width: 900px) { #gallery-container { column-count: 2; } }
-@media (max-width: 600px) { #gallery-container { column-count: 1; } }
+/* Responsive Handling */
+@media (max-width: 1100px) { #gallery-container { column-count: 2; } }
+@media (max-width: 700px) { 
+    #gallery-container { column-count: 1; padding: 20px; }
+    .about-container { padding: 0 20px; }
+}
 
-
-/* Enhanced About Page Styling */
+/* Realistic Artist Profile Styling */
 .about-container {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 0 40px;
+    max-width: 1100px;
+    margin: 80px auto;
 }
 
 .hero-section h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    letter-spacing: -1px;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    background: linear-gradient(to bottom, #fff, #888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .tagline {
-    font-size: 1.2rem;
-    color: var(--accent); /* That neon pink we used earlier */
-    font-weight: 300;
-    margin-bottom: 60px;
+    font-size: 1.1rem;
+    color: var(--accent);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin-top: 10px;
 }
 
 .content-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 80px;
-    border-top: 1px solid #333;
-    padding-top: 40px;
-}
-
-.bio-column h2, .info-block h3 {
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-    margin-bottom: 25px;
-    color: var(--text-dim);
-}
-
-.bio-column p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 25px;
-    color: var(--text-main);
-}
-
-.info-block {
-    margin-bottom: 40px;
-}
-
-.info-block ul {
-    list-style: none;
-    padding: 0;
-}
-
-.info-block li {
-    padding: 8px 0;
-    border-bottom: 1px solid #222;
-    color: var(--text-dim);
-}
-
-.contact-footer {
-    margin-top: 80px;
-    text-align: center;
-    border-top: 1px solid #333;
-    padding-top: 40px;
-}
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-    .content-grid { grid-template-columns: 1fr; gap: 40px; }
-    .hero-section h1 { font-size: 2.2rem; }
+    grid-template-columns: 1.6fr 1fr;
+    gap: 100px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 60px;
 }
