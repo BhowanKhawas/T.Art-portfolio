@@ -17,7 +17,6 @@ const aboutHtml = pug.renderFile(aboutViewPath);
 fs.writeFileSync(path.join(__dirname, '../about.html'), aboutHtml);
 
 // 4. Build the Presentation Page (presentation.html)
-// Make sure you have created views/presentation.pug first!
 const presViewPath = path.join(__dirname, '../views/presentation.pug');
 const presHtml = pug.renderFile(presViewPath, { artworks: artData });
 fs.writeFileSync(path.join(__dirname, '../presentation.html'), presHtml);
