@@ -9,16 +9,15 @@ html(lang="en")
     nav
       a(href="about.html") About
       a(href="index.html") Gallery
-      
+      a(href="presentation.html") Presentation
 
-    header
-      h1 Tisa (Dilasha) Shrestha
-      p Art Portfolio
+    header.hero-header
+    h1(style="text-align:center") Visual Artist Portfolio
 
     main#gallery-container
-      //- This loops through the art data and displays the photos and descriptions
-      each art in artworks
+      each item in artworks
         article.art-piece
-          img(src=art.imageUrl, alt=art.title)
-          h2= art.title
-          p= art.description
+          a(href=`view-${item.id}.html`)
+            img(src=item.imageUrl, alt=item.title)
+          h2= item.title
+          p= item.description
