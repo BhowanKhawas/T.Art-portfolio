@@ -3,18 +3,37 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title About | Tisa Shrestha
+    title Artist Profile | Tisa Shrestha
     link(rel="stylesheet", href="assets/css/style.css")
   body
     nav
       a(href="index.html") Gallery
       a(href="about.html") About
 
-    header
-      h1 About the Artist
+    main.about-container
+      section.hero-section
+        h1 Tisa (Dilasha) Shrestha
+        p.tagline Exploring the intersection of tradition and modern surrealism.
+      
+      section.content-grid
+        .bio-column
+          h2 Artistic Statement
+          p Tisa Shrestha is a visual artist specializing in a diverse range of mediums, from the disciplined world of classical charcoal study to the fluid, expressive nature of watercolor and ink. 
+          p Her work is characterized by a deep fascination with human emotion and cultural iconography. By blending the raw textures of traditional sketching with the bold, neon-lit aesthetics of contemporary illustration, she creates a visual bridge between the past and the present.
+          
+        .details-column
+          .info-block
+            h3 Expertise
+            ul
+              li Anatomical & Still Life Charcoal Study
+              li Fluid Watercolor Seashcapes & Florals
+              li Character Design & Modern Ink Illustration
+              li Cultural Deity & Traditional Sketching
+          
+          .info-block
+            h3 The Portfolio
+            p This digital archive houses over 50 curated works, reflecting years of technical growth and creative discovery. Each piece is an exploration of form, light, and the narrative power of visual art.
 
-    main.about-section
-      h2 Tisa (Dilasha) Shrestha
-      p Welcome to the digital art portfolio of Tisa Shrestha. 
-      p This space is dedicated to showcasing her original artwork. Each piece in this collection represents a specific moment of inspiration and creative exploration.
-      p Explore the gallery to view her latest pieces.
+      footer.contact-footer
+        p Interested in the work? 
+        a(href="mailto:your-email@example.com") Contact the Artist
