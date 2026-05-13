@@ -84,7 +84,74 @@ nav a:hover {
 @media (max-width: 900px) { #gallery-container { column-count: 2; } }
 @media (max-width: 600px) { #gallery-container { column-count: 1; } }
 
-/* About Section Styling */
-.about-container { max-width: 800px; margin: 0 auto; padding: 40px; }
-.hero-section { text-align: center; margin-bottom: 60px; }
-.bio-text p { line-height: 1.8; color: var(--text-dim); }
+
+/* Enhanced About Page Styling */
+.about-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: var(--accent); /* That neon pink we used earlier */
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 80px;
+    border-top: 1px solid #333;
+    padding-top: 40px;
+}
+
+.bio-column h2, .info-block h3 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: var(--text-dim);
+}
+
+.bio-column p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: var(--text-main);
+}
+
+.info-block {
+    margin-bottom: 40px;
+}
+
+.info-block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-block li {
+    padding: 8px 0;
+    border-bottom: 1px solid #222;
+    color: var(--text-dim);
+}
+
+.contact-footer {
+    margin-top: 80px;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 40px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .content-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-section h1 { font-size: 2.2rem; }
+}
