@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Full Experience | Tisa Shrestha
+    link(rel="stylesheet", href="assets/css/presentation.css")
+  body.presentation-mode
+    nav
+      a(href="index.html") ← Back to Grid
+      a(href="about.html") About
+
+    main#full-scroll-container
+      each art in artworks
+        section.full-view-section
+          .image-wrapper
+            img(src=art.imageUrl, alt=art.title)
+          .image-meta
+            h2= art.title
+            p= art.description
