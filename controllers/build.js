@@ -18,7 +18,7 @@ fs.writeFileSync(path.join(__dirname, '../about.html'), aboutHtml);
 
 // 4. Build the Presentation Page (presentation.html)
 const presViewPath = path.join(__dirname, '../views/presentation.pug');
-const presHtml = pug.renderFile(presViewPath, { artworks: artData });
+const presHtml = pug.renderFile(presViewPath, { artworks: artData }); 
 fs.writeFileSync(path.join(__dirname, '../presentation.html'), presHtml);
 
 console.log('Success! Index, About, and Presentation pages generated.');

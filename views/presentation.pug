@@ -11,11 +11,10 @@ html(lang="en")
       a(href="about.html") About
       a(href="presentation.html") Presentation
 
-    main#full-scroll-container
-      each art in artworks
-        section.full-view-section
-          .image-wrapper
-            img(src=art.imageUrl, alt=art.title)
-          .image-meta
-            h2= art.title
-            p= art.description
+    main.slideshow-container
+  each art, index in artworks
+    //- This 'index * 6s' delay is what makes them change one by one
+    .slide(style=`animation-delay: ${index * 6}s`)
+      img(src=art.imageUrl, alt=art.title)
+      .image-meta
+        h1= art.title

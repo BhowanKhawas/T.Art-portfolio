@@ -1,17 +1,52 @@
-/* --- Visual Variables (Matched to Main Site) --- */
+/* --- Corrected Presentation Theme --- */
 :root {
-    --bg-color: #0d0d0d;        /* Matches About page background */
-    --text-main: #f8f9fa;       /* Matches About page heading color */
-    --text-dim: #9ca3af;        /* Matches About page body text color */
-    --accent: #ff0055;          /* Matches About page accent pink */
+    --bg-color: #0d0d0d;
+    --text-main: #f8f9fa;
+    --text-dim: #9ca3af;
+    --accent: #ff0055;
     --nav-height: 70px;
 }
 
 .presentation-mode {
-    margin: 0;
-    overflow: hidden; 
     background-color: var(--bg-color);
-    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    margin: 0;
+    overflow: hidden; /* Prevents manual scroll conflicts */
+    font-family: 'Inter', sans-serif;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: row-reverse; /* Puts Title Left, Image Right */
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 80px 60px; /* 120px top padding prevents image cutting */
+    box-sizing: border-box;
+    animation: slideFade 312s infinite;
+}
+
+/* Logic for the automatic fade */
+@keyframes slideFade {
+    0% { opacity: 0; }
+    0.5% { opacity: 1; }      /* Fade in */
+    1.92% { opacity: 1; }     /* Stay visible */
+    2.42% { opacity: 0; }     /* Fade out */
+    100% { opacity: 0; }
+}
+
+.slide img {
+    max-height: 65vh;
+    max-width: 85%;
+    object-fit: contain;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.6);
 }
 
 /* --- Styled Navigation (Matched exactly to About Page) --- */
@@ -72,31 +107,80 @@ nav a:hover {
 
 /* --- Image & Content Styling --- */
 .image-wrapper img {
-    max-height: 70vh; /* Keeps artwork within safe viewing area */
-    max-width: 90%;
+    max-height: 85vh; /* Enlarges the image to fill the screen height */
+    max-width: 95%;   /* Ensures it doesn't hit the sides */
     object-fit: contain;
     border-radius: 4px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    box-shadow: 0 40px 100px rgba(0,0,0,0.6);
+}
+
+/* LEFT SIDE: Becomes exactly 1/3 of the width */
+.image-meta {
+    flex: 1; 
+    text-align: left;
+    padding-left: 60px;
+    border-left: 10px solid var(--accent); 
+}
+/* LEFT SIDE: Becomes exactly 1/3 of the width */
+.image-meta {
+    flex: 1; 
+    text-align: left;
+    padding-left: 60px;
+    border-left: 10px solid var(--accent); 
+}
+
+/* RIGHT SIDE: Becomes exactly 2/3 of the width */
+.image-wrapper {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-meta h1 {
+    /* Enlarged size for maximum impact */
+    font-size: 3.5rem; 
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-top: 40px;
+    color: var(--text-main);
+    text-transform: none; /* Keeps the natural casing of your titles */
+}
+
+
+:root {
+    --bg-color: #0d0d0d; /* Matches About page exactly */
+    --text-main: #f8f9fa;
+    --text-dim: #9ca3af;
+    --accent: #ff0055;
+}
+
+
+.full-view-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color); /* Fixes the white background */
+    padding: 100px 40px; 
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.image-wrapper img {
+    /* Lowered from 80vh to 65vh to make it less 'large' */
+    max-height: 65vh; 
+    max-width: 85%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.7);
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.image-meta {
-    margin-top: 40px;
-    text-align: center;
-}
-
 .image-meta h2 {
-    font-size: 2.2rem;
-    font-weight: 800;
-    margin-bottom: 10px;
     color: var(--text-main);
-    letter-spacing: -0.04em;
-}
-
-.image-meta p {
-    font-size: 1rem;
-    color: var(--text-dim);
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
+    font-size: 2rem;
+    margin-top: 30px;
 }
