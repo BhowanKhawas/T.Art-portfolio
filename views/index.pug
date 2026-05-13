@@ -3,15 +3,20 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title My Art Portfolio
+    title Tisa Shrestha | Art Portfolio
     link(rel="stylesheet", href="assets/css/style.css")
   body
+    nav
+      a(href="about.html") About
+      a(href="index.html") Gallery
+      
+
     header
-      h1 My Art Portfolio
-      p A collection of my paintings and drawings.
+      h1 Tisa (Dilasha) Shrestha
+      p Art Portfolio
 
     main#gallery-container
-      //- This loops through the data provided by the Controller
+      //- This loops through the art data and displays the photos and descriptions
       each art in artworks
         article.art-piece
           img(src=art.imageUrl, alt=art.title)

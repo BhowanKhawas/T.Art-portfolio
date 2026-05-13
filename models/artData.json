@@ -1,14 +1,314 @@
 [
   {
     "id": 1,
-    "title": "Sunset Over the Hills",
-    "imageUrl": "assets/images/painting1.jpg",
-    "description": "An oil painting capturing the warm colors of a summer sunset."
+    "title": "The Cave's Horizon",
+    "imageUrl": "assets/images/IMG20260309201130.jpg",
+    "description": "A striking painting depicting the sharp silhouette of a galleon emerging from a dark, textured cave into a vibrant, sunlit sea."
   },
   {
     "id": 2,
-    "title": "Charcoal Portrait",
-    "imageUrl": "assets/images/drawing1.jpg",
-    "description": "A quick charcoal study focusing on light and shadow."
+    "title": "Duality of the Divine",
+    "imageUrl": "assets/images/IMG20260309201208.jpg",
+    "description": "A highly detailed monochromatic piece contrasting a serene, traditional profile with the fierce, intricate visage of a cultural deity."
+  },
+  {
+    "id": 3,
+    "title": "Silenced Emotions",
+    "imageUrl": "assets/images/IMG20260309201245.jpg",
+    "description": "An expressive charcoal sketch featuring bold, chaotic strokes that capture a raw, emotive profile with striking facial details."
+  },
+  {
+    "id": 4,
+    "title": "Study in Shadow and Form",
+    "imageUrl": "assets/images/IMG20260309201328.jpg",
+    "description": "A classic still-life composition rendered in heavy charcoal, masterfully capturing the volume and lighting of everyday objects."
+  },
+  {
+    "id": 5,
+    "title": "Midnight at the Pier",
+    "imageUrl": "assets/images/IMG20260309201356.jpg",
+    "description": "A serene seascape capturing the tranquil movement of turquoise waves beneath a sweeping, atmospheric night sky."
+  },
+  {
+    "id": 6,
+    "title": "Citrus Vibrance",
+    "imageUrl": "assets/images/IMG20260309201634.jpg",
+    "description": "A bright and refreshing watercolor piece showcasing the playful geometry and vivid colors of sliced fruit against a dark background."
+  },
+  {
+    "id": 7,
+    "title": "Misty Blue Woods",
+    "imageUrl": "assets/images/IMG20260309201644.jpg",
+    "description": "An atmospheric watercolor landscape where deep, silhouetted trees stand against a cold, ethereal blue forest mist."
+  },
+  {
+    "id": 8,
+    "title": "Twilight Over the Skyline",
+    "imageUrl": "assets/images/IMG20260309201725.jpg",
+    "description": "A vivid watercolor gradient of twilight skies framing a silhouetted cityscape and delicate flora illuminated by floating lights."
+  },
+  {
+    "id": 9,
+    "title": "Currents and Colors",
+    "imageUrl": "assets/images/IMG20260309201833.jpg",
+    "description": "A fluid watercolor painting capturing the delicate, flowing movement and translucent colors of two jellyfish navigating the ocean."
+  },
+  {
+    "id": 10,
+    "title": "Surreal Seas and Skies",
+    "imageUrl": "assets/images/IMG20260309201918.jpg",
+    "description": "A captivating composition blending marine life with the striking silhouettes of traditional pagoda architecture beneath a swirling sky."
+  },
+  {
+    "id": 11,
+    "title": "Potted Greenery",
+    "imageUrl": "assets/images/IMG20260309201926.jpg",
+    "description": "A vibrant study of a potted broad-leaf plant, contrasting the earthy texture of a terracotta pot with rich, painted greens."
+  },
+  {
+    "id": 12,
+    "title": "Blooming Mind",
+    "imageUrl": "assets/images/IMG20260309202010.jpg",
+    "description": "A whimsical ink and watercolor illustration featuring a figure with a blossoming red flower for a head, beautifully blending fashion with surrealism."
+  },
+  {
+    "id": 13,
+    "title": "Tides and Sun",
+    "imageUrl": "assets/images/IMG20260309202018.jpg",
+    "description": "A stylized, fluid watercolor piece where a figure's flowing hair merges with crashing blue waves beneath a vibrant orange sun."
+  },
+  {
+    "id": 14,
+    "title": "Nature's Profile",
+    "imageUrl": "assets/images/IMG20260309202047.jpg",
+    "description": "A captivating circular composition showing a woman's dark silhouette seamlessly transforming into a misty, pine-covered mountain range."
+  },
+  {
+    "id": 15,
+    "title": "Blue Reverie",
+    "imageUrl": "assets/images/IMG20260309202055.jpg",
+    "description": "A charming character design rendered in monochromatic blues, featuring a girl enveloped by her voluminous, cloud-like hair."
+  },
+  {
+    "id": 16,
+    "title": "Divine Ornamentation",
+    "imageUrl": "assets/images/IMG20260309202145.jpg",
+    "description": "An intricate pencil sketch of a cultural deity, showcasing meticulous attention to the ornate crown, traditional jewelry, and serene expression."
+  },
+  {
+    "id": 17,
+    "title": "Celestial Gaze",
+    "imageUrl": "assets/images/IMG20260309202218.jpg",
+    "description": "A mystical and surreal pencil drawing of striking eyes framed by celestial motifs, including a crescent moon, swirling clouds, and delicate stars."
+  },
+  {
+    "id": 18,
+    "title": "Emerging Form",
+    "imageUrl": "assets/images/IMG20260309202244.jpg",
+    "description": "A minimalist yet highly expressive pencil sketch focusing on the delicate curves of a face emerging thoughtfully from the negative space."
+  },
+  {
+    "id": 19,
+    "title": "The Hooded Archer",
+    "imageUrl": "assets/images/IMG20260309202325.jpg",
+    "description": "A dynamic character sketch of a hooded archer, capturing tension, focus, and movement with confident pencil strokes."
+  },
+  {
+    "id": 20,
+    "title": "Sacred Landscapes",
+    "imageUrl": "assets/images/IMG20260309202347.jpg",
+    "description": "A dual-composition sketch contrasting a detailed hilltop temple with a serene valley featuring a traditional Torii gate and ducks on a quiet pond."
+  }, 
+  {
+    "id": 21,
+    "title": "Study of a Pear",
+    "imageUrl": "assets/images/IMG20260309202427.jpg",
+    "description": "A delicate pencil sketch of a single pear, demonstrating masterful shading, volume, and realistic cast lighting."
+  },
+  {
+    "id": 22,
+    "title": "Apothecary Bottles",
+    "imageUrl": "assets/images/IMG20260309202440.jpg",
+    "description": "A detailed still-life pencil drawing of two stacked glass apothecary bottles, showcasing careful attention to cylindrical perspective and label details."
+  },
+  {
+    "id": 23,
+    "title": "Draped Fabric and Sphere",
+    "imageUrl": "assets/images/IMG20260309202504.jpg",
+    "description": "A classic academic still-life study in charcoal, capturing the intricate folds of draped fabric beneath a perfectly shaded sphere."
+  },
+  {
+    "id": 24,
+    "title": "Reflective Urn",
+    "imageUrl": "assets/images/IMG20260309202514.jpg",
+    "description": "A precise pencil study of a metallic vessel, effectively rendering the smooth, reflective surface and sharp highlights of the metal."
+  },
+  {
+    "id": 25,
+    "title": "Classic Frustration",
+    "imageUrl": "assets/images/IMG20260309202559.jpg",
+    "description": "An energetic and expressive character sketch of a classic cartoon duck, capturing a distinct attitude with dynamic pencil strokes."
+  },
+  {
+    "id": 26,
+    "title": "Cosmic Companion",
+    "imageUrl": "assets/images/IMG20260309202651.jpg",
+    "description": "A whimsical, stylized ink drawing of a young girl accompanied by a cosmic spirit, surrounded by floating planets and starry motifs."
+  },
+  {
+    "id": 27,
+    "title": "Portrait in Retro Frames",
+    "imageUrl": "assets/images/IMG20260309202710.jpg",
+    "description": "A realistic pencil portrait of a man wearing retro glasses, displaying smooth shading and strong, lifelike characterization."
+  },
+  {
+    "id": 28,
+    "title": "Wisdom and Patterns",
+    "imageUrl": "assets/images/IMG20260309202724.jpg",
+    "description": "A poignant and highly detailed pencil portrait of an older woman wearing a patterned scarf, beautifully capturing the textures of age and expression."
+  },
+  {
+    "id": 29,
+    "title": "Beneath the Surface",
+    "imageUrl": "assets/images/IMG20260309202748.jpg",
+    "description": "A striking anatomical illustration contrasting a meticulously inked skeletal hand over a faded blue silhouette of a human handprint."
+  },
+  {
+    "id": 30,
+    "title": "Shattered Gaze",
+    "imageUrl": "assets/images/IMG20260309202823.jpg",
+    "description": "A bold, stylized ink piece using stark black, white, and red accents to frame an intense eye within shattered, geometric fragments."
+  },
+  {
+    "id": 31,
+    "title": "Purple Reverie",
+    "imageUrl": "assets/images/IMG20260309202833.jpg",
+    "description": "A stylized illustration in magenta ink depicting a crowned figure resting gracefully atop swirling, ethereal clouds."
+  },
+  {
+    "id": 32,
+    "title": "Manga-Inspired Portrait",
+    "imageUrl": "assets/images/IMG20260309202908.jpg",
+    "description": "A clean and expressive pencil sketch of a horned anime character, featuring sharp line work and striking, intense eyes."
+  },
+  {
+    "id": 33,
+    "title": "Fragmented Beauty",
+    "imageUrl": "assets/images/IMG20260309202919.jpg",
+    "description": "A striking ink drawing of a partial face, brilliantly utilizing the raw, torn edges of textured handmade paper to enhance its organic feel."
+  },
+  {
+    "id": 34,
+    "title": "Cosmic Taste",
+    "imageUrl": "assets/images/IMG20260309203006.jpg",
+    "description": "A surreal and imaginative ink illustration of an octopus tentacle emerging from a mouth, surrounded by playful cosmic elements."
+  },
+  {
+    "id": 35,
+    "title": "Crystalline Fungi",
+    "imageUrl": "assets/images/IMG20260309203042.jpg",
+    "description": "A detailed ink drawing combining organic mushrooms and geometric crystals that seemingly drip and melt into the void."
+  },
+  {
+    "id": 36,
+    "title": "Mushroom Metropolis",
+    "imageUrl": "assets/images/IMG20260309203054.jpg",
+    "description": "An incredibly intricate and whimsical ink illustration of a charming fantasy village nestled on the cap of a giant mushroom."
+  },
+  {
+    "id": 37,
+    "title": "Warmth in Hand",
+    "imageUrl": "assets/images/IMG20260309203136.jpg",
+    "description": "A masterful display of ink cross-hatching, depicting a pair of hands gently cradling a steaming teacup against a geometric backdrop."
+  },
+  {
+    "id": 38,
+    "title": "Cross-Hatched Cherries",
+    "imageUrl": "assets/images/IMG20260309203157.jpg",
+    "description": "A precise ink study of two cherries, showcasing advanced cross-hatching techniques to create deep shadows and rounded volume."
+  },
+  {
+    "id": 39,
+    "title": "Feline Alleyway",
+    "imageUrl": "assets/images/IMG20260309203220.jpg",
+    "description": "A highly detailed, charming ink illustration of a Japanese-inspired street scene populated by adorable animal characters."
+  },
+  {
+    "id": 40,
+    "title": "Mechanical Cosmos",
+    "imageUrl": "assets/images/IMG20260309203302.jpg",
+    "description": "A vibrant mixed-media piece contrasting a heavily shaded, imposing mechanical figure against a fiery sky and colorful cosmic elements."
+  }, 
+  {
+    "id": 41,
+    "title": "Universal Reach",
+    "imageUrl": "assets/images/IMG20260309203402.jpg",
+    "description": "A vibrant colored-pencil drawing of a hand in shades of purple and teal, cradling a ringed planet in a display of cosmic power."
+  },
+  {
+    "id": 42,
+    "title": "Floral Repetition",
+    "imageUrl": "assets/images/IMG20260309203433.jpg",
+    "description": "A stunning hand-stamped block print featuring a repeating red floral motif that creates a mesmerizing geometric tapestry."
+  },
+  {
+    "id": 43,
+    "title": "Oceanic Block Print",
+    "imageUrl": "assets/images/IMG20260309203443.jpg",
+    "description": "A playful and rhythmic block print depicting orange fish navigating through blue, semicircular waves beneath a bright sun."
+  },
+  {
+    "id": 44,
+    "title": "Snack-Time Stylization",
+    "imageUrl": "assets/images/IMG20260309203519.jpg",
+    "description": "A charming and humorous character drawing of a girl wearing a potato chip bag as a hat, rendered with clean lines and bold colors."
+  },
+  {
+    "id": 45,
+    "title": "Neon Pixie",
+    "imageUrl": "assets/images/IMG20260309203543.jpg",
+    "description": "A vibrant pop-art portrait using neon pink markers to highlight a playful character with freckles and messy hair on dot-grid paper."
+  },
+  {
+    "id": 46,
+    "title": "Electric Glow",
+    "imageUrl": "assets/images/IMG20260309203555.jpg",
+    "description": "A striking neon-bordered portrait of a girl, utilizing high-contrast pinks and greens to create a modern, glowing aesthetic."
+  },
+  {
+    "id": 47,
+    "title": "Geometric Plumage",
+    "imageUrl": "assets/images/IMG20260309203312.jpg",
+    "description": "A creative mixed-media piece where a realistic feather shatters into colorful geometric fragments against a soft, pastel-colored sky."
+  },
+  {
+    "id": 48,
+    "title": "Tailed Beasts Assembly",
+    "imageUrl": "assets/images/IMG20260309203350.jpg",
+    "description": "A colorful and detailed tribute to popular anime culture, featuring a crowded and expressive group of legendary mythical creatures."
+  },
+  {
+    "id": 49,
+    "title": "Starlight Bob",
+    "imageUrl": "assets/images/IMG20260309203628.jpg",
+    "description": "A bold neon-pink and blue portrait of a girl with a sharp bob cut, surrounded by a whimsical border of colorful stars."
+  },
+  {
+    "id": 50,
+    "title": "Pink Punk",
+    "imageUrl": "assets/images/IMG20260309203639.jpg",
+    "description": "A stylish contemporary portrait featuring a girl with bright pink hair, utilizing orange highlights and cross-hatched textures for a punk-inspired look."
+  },
+  {
+    "id": 51,
+    "title": "Verdant Aura",
+    "imageUrl": "assets/images/IMG20260309203658.jpg",
+    "description": "A vibrant and soulful mixed-media portrait featuring an expressive figure with bright green hair, utilizing bold patches of color to define light and shadow."
+  },
+  {
+    "id": 52,
+    "title": "Autumn Joy",
+    "imageUrl": "assets/images/IMG20260309203708.jpg",
+    "description": "A heartwarming and colorful illustration of a happy golden retriever wearing a tiny pumpkin hat, surrounded by festive, sparkling stars."
   }
 ]
