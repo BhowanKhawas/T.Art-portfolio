@@ -16,10 +16,9 @@ html(lang="en")
     p Visual Artist Portfolio
 
     main#gallery-container
-      //- This loops through the art data and displays the photos and descriptions
-      each item in artData
-      .art-piece
-        a(href=`view-${item.id}.html`)
-          img(src=item.imageUrl, alt=item.title)
-        h2= item.title
-        p= item.description
+      each item in artworks
+        article.art-piece
+          a(href=`view-${item.id}.html`)
+            img(src=item.imageUrl, alt=item.title)
+          h2= item.title
+          p= item.description
