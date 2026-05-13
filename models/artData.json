@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Sunset Over the Hills",
+    "imageUrl": "assets/images/painting1.jpg",
+    "description": "An oil painting capturing the warm colors of a summer sunset."
+  },
+  {
+    "id": 2,
+    "title": "Charcoal Portrait",
+    "imageUrl": "assets/images/drawing1.jpg",
+    "description": "A quick charcoal study focusing on light and shadow."
+  }
+]
