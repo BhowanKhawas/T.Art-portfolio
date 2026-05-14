@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "My Art Portfolio using MVC, Pug, and Node.js",
   "scripts": {
-    "build": "node controllers/build.js"
+    "optimize": "node controllers/optimize.js",
+    "build": "node controllers/build.js",
+    "ready": "npm run optimize && npm run build"
   },
   "dependencies": {
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "sharp": "^0.34.5"
   }
 }
