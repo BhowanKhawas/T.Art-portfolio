@@ -126,3 +126,25 @@ nav a:hover { color: var(--accent); }
     padding: 1rem;
   }
 }
+
+.signature-container {
+  margin-top: 3rem;
+  opacity: 0.8; /* Subtle transparency for a professional look */
+  transition: opacity 0.3s ease;
+}
+
+.signature-container:hover {
+  opacity: 1; /* Highlights when the user reads the bio */
+}
+
+.signature-img {
+  max-width: 250px; /* Keeps it elegant and not overwhelming */
+  height: auto;
+  filter: brightness(0) invert(1); /* Turns a black ink signature white for the dark theme */
+}
+
+@media (max-width: 768px) {
+  .signature-img {
+    max-width: 180px; /* Scaled down for mobile */
+  }
+}
